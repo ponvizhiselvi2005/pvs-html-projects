@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fav Food</title>
+    <style>
+      h1 {
+        position: absolute;
+        top: 140px;
+        left: 250px;
+      }
+      h3 {
+        color: black;
+        text-align: center;
+      }
+          p{
+        color: white;
+        text-align: center;
+      }
+      .food_image {
+        width: 50%;
+        height: 50%;
+      }
+
+      img {
+        height: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+      span {
+        padding-left: 60px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <div style="background-color: powderblue" class="food_image">
+          <img
+            id="titleImage"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBrC-fnJM9oLuA36obuMhpaTJxxgqBAsYwqG94Wfk2sJulNyteLnDvY62Z6v-saAkkKJ8&usqp=CAU"
+            alt="pic3"
+          />
+          <h1 id="titleName">SOME OF  MY FAV<br> FOODS </h1>
+        </div>
+        <div style="background-color: yellow" class="food_image">
+          <h3 id="favFood1">PIZZA</h3>
+          <p id="foodDescription1">Pizz is a Pizza</p>
+          <img id="favFoodImage1"
+            src="https://static.toiimg.com/thumb/resizemode-4,width-1200,height-900,msid-87930581/87930581.jpg"
+            alt="pic2"
+          />
+        </div>
+        <div style="background-color: purple" class="food_image">
+          <h3 id="favFood2">FRIED CHICKEN</h3>
+          <p id="foodDescription2">Fried chicken is a very tasty</p>
+          <img id="favFoodImage2"
+            src="https://image.shutterstock.com/image-photo/crispy-kentucky-fried-chicken-wooden-260nw-368008064.jpg"
+            alt="pic1"
+          />
+        </div>
+        <div style="background-color: skyblue" class="food_image">
+          <h3 id="favFood3">SALAD</h3>
+          <p id="foodDescription3">Salad is a Salad</p>
+          <img id="favFoodImage3"
+            src="https://happihomemade.com/wp-content/uploads/2016/08/Watermelon-stars-005wm.png"
+            alt="pic4"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("images");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+  </script>
+</html>
